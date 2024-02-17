@@ -1,0 +1,38 @@
+body {
+    font-family: sans-serif;
+}
+
+.price-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product{
+    padding: 20px;
+    width: 200px;
+    border: 1px solid;
+    border-radius: 10px;
+    animation: productAnim 5s infinite;
+}
+
+.container{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+@keyframes productAnim {
+    0% {
+        transform: none;
+    } 25% {
+        transform: translateX(100px);
+        background-color: red;
+    } 50% {
+        transform: translate(100px, 100px);
+        background-color: green;
+    } 75% {
+        transform: translateY(100px);
+        background-color: blue;
+    }
+}
